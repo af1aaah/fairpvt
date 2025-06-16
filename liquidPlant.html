@@ -45,7 +45,7 @@
         <li><a href="/#about" class="">About</a></li>
       </ul>
       <div class="flex items-center gap-2">
-        <a href="#contact">
+        <a href="index.html#contact">
           <button
             class="relative bg-white rounded-full px-4 py-2 text-black font-medium cursor-pointer transition-all duration-300"
           >
@@ -102,9 +102,9 @@
     </div>
 
     <!-- about Section -->
-    <div class="about w-full flex pl-25 py-25">
-      <div class="flex flex-col gap-y-10 items-center w-[40%]">
-        <div class="rounded-2xl overflow-hidden w-[70%] cursor-pointer">
+    <div class="about w-full flex-col md:flex md:flex-row md:pl-25 md:py-25 md:pr-0 pb-10">
+      <div class="flex flex-col gap-y-10 md:items-center w-full md:w-[40%]">
+        <div class="rounded-2xl overflow-hidden w-[70%] cursor-pointer hidden md:block">
           <img
             src="assets\imgs\liquid plant\liquid plant table.webp"
             alt=""
@@ -112,41 +112,41 @@
           />
         </div>
         <div
-          class="text-4xl md:text-6xl font-semibold flex flex-col gap-0.5 items-baseline"
+          class="text-4xl md:text-6xl font-semibold flex md:flex-col flex-row md:gap-0.5 justify-start pt-10 md:pt-0 pl-10 md:pl-0"
         >
           <span>Fair®</span>
-          <span class="text-right w-[100%]">Liquid Plant</span>
+          <span class="text-right md:w-[100%]">Liquid Plant</span>
         </div>
       </div>
 
-      <div class="flex flex-col gap-y-15 items-end justify-end w-[60%]">
-        <span class="text-2xl font-semibold text-left pr-25"
+      <div class="flex flex-col md:gap-y-15 gap-y-8 items-end justify-end w-full md:w-[60%] ">
+        <span class="text-2xl font-semibold text-left md:pr-25 p-10 md:p-0 pb-0 "
           >Liquid Plant is a groundbreaking bio-tech air purifying solution that
           mimics nature by absorbing CO₂ and releasing oxygen — 25 times more
           efficiently than traditional plants. Whether at home, work, or in
           public spaces, breathe cleaner, healthier air with every use.</span
         >
 
-        <div class="rounded-l-2xl overflow-hidden w-[100%] cursor-pointer">
+        <div class="rounded-l-2xl overflow-hidden w-[100%] cursor-pointer pl-10 md:pl-0">
           <img
             src="assets/imgs/liquid plant/room2.png"
             alt=""
-            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+            class="rounded-l-2xl w-full h-full object-cover transition-transform duration-300 md:hover:scale-105  "
           />
         </div>
       </div>
     </div>
 
-    <div class="w-full justify-start mb-20 md:mb-[100px] relative">
+    <div class="w-full justify-start mb-10 md:mb-[100px] relative">
       <div
-        class="bg_img w-full h-[200px] bg-cover bg-center bg-no-repeat"
+        class="bg_img w-full h-[200px] bg-cover bg-center"
         style="
           background-image: url('./assets/imgs/liquid plant/indoor\ plant.jpg');
         "
       ></div>
       <div class="overlay bg-black/50 w-full h-full absolute top-0"></div>
       <div
-        class="absolute top-[50%] transform -translate-y-1/2 left-5 z-10"
+        class="absolute top-[50%] transform -translate-y-1/2 left-24 z-10"
       >
         <div class="flex flex-col">
           <span class="text-4xl font-bold text-white"
@@ -169,10 +169,10 @@
 
     <!-- Products Details -->
 
-    <div class="pb-25 pl-25 flex">
-      <div class="w-[50%] flex flex-col items-center gap-6">
+    <div class="md:pb-25 md:pl-25 flex md:flex-row flex-col relative md:static py-10 md:py-0">
+      <div class="w-full md:w-[50%] flex flex-col items-center gap-6 absolute top-0 md:static ">
         <h2
-          class="text-4xl md:text-6xl font-semibold text-start leading-18"
+          class="text-4xl md:text-6xl font-semibold text-start leading-18 pl-10 md:pl-0"
           style="width: 100%"
         >
           Why Choose Our <br />
@@ -203,7 +203,7 @@
         </ul>
       </div>
 
-      <div class="w-[50%] flex justify-end items-center">
+      <div class="w-full md:w-[50%] flex justify-center md:justify-end items-center">
         <img
           src="assets/imgs/liquid plant/liquid plant white bg.png"
           alt="Liquid Plant"
@@ -214,20 +214,14 @@
 
     <!-- how it use section -->
 
-    <!-- style="
-        background-image: url('./assets/imgs/liquid plant/border.jpg');
-      " -->
-
-    <div class="w-full  bg-[#f7f5f5] px-15 py-15 bg-cover bg-center bg-no-repeat"
-      >
       <div
-        class="w-full rounded-4xl bg-[#f7f5f5] md:flex md:flex-col md:gap-10 p-10"
+        class="w-full bg-[#f7f5f5] md:flex md:flex-col gap-20 md:gap-10 md:p-31.25 p-5"
       >
-        <span class="text-2xl md:text-4xl font-semibold">How It Works ?</span>
+        <span class="text-4xl font-semibold">How It Works ?</span>
 
-        <div class="flex flex-col gap-20">
+        <div class="flex flex-col gap-10 md:gap-0">
           <div class="w-[100%] flex justify-start">
-            <div class="flex md:flex-col gap-10 w-[60%]">
+            <div class="flex  md:flex-col gap-10 md:w-[60%]  w-[100%]">
               <div class="flex items-center gap-5">
                 <img
                   src="assets/imgs/liquid plant/Place It.png"
@@ -246,7 +240,7 @@
               </div>
             </div>
 
-            <div class="w-[40%] flex justify-center items-end">
+            <div class="md:w-[40%] md:flex hidden justify-center items-end">
               <img
                 src="assets/imgs/liquid plant/arrow.svg"
                 alt=""
@@ -256,7 +250,7 @@
           </div>
 
           <div class="w-[100%] flex justify-end">
-            <div class="w-[40%] flex justify-center items-end">
+            <div class="w-[40%] md:flex hidden justify-center items-end">
               <img
                 src="assets/imgs/liquid plant/arrow.svg"
                 alt=""
@@ -264,8 +258,8 @@
               />
             </div>
 
-            <div class="flex md:flex-col gap-10 w-[60%]">
-              <div class="flex items-center gap-5">
+            <div class="flex md:flex-col gap-10 md:w-[60%] w-[100%]">
+              <div class="flex flex-row-reverse md:flex-row items-center gap-5">
                 <img
                   src="assets/imgs/liquid plant/Place It.png"
                   alt=""
@@ -286,7 +280,7 @@
           </div>
 
           <div class="w-[100%] flex justify-start">
-            <div class="flex md:flex-col gap-10 w-[60%]">
+            <div class="flex md:flex-col gap-10 md:w-[60%] w-full">
               <div class="flex items-center gap-5">
                 <img
                   src="assets/imgs/liquid plant/Place It.png"
@@ -306,7 +300,7 @@
               </div>
             </div>
 
-            <div class="w-[40%] flex justify-center items-end">
+            <div class="w-[40%] md:flex hidden justify-center items-end">
               <img
                 src="assets/imgs/liquid plant/arrow.svg"
                 alt=""
@@ -316,8 +310,8 @@
           </div>
 
           <div class="w-[100%] flex justify-end">
-            <div class="flex md:flex-col gap-10 w-[60%]">
-              <div class="flex items-center gap-5">
+            <div class="flex md:flex-col gap-10 md:w-[60%] w-full">
+              <div class="flex flex-row-reverse md:flex-row items-center gap-5">
                 <img
                   src="assets/imgs/liquid plant/Place It.png"
                   alt=""
@@ -337,7 +331,7 @@
           </div>
         </div>
       </div>
-    </div>
+   
     <!-- products buy now -->
 
     <div class="flex flex-col gap-20 py-15" id="products">

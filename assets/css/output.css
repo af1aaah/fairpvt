@@ -1299,6 +1299,11 @@
       display: none;
     }
   }
+  .md\:h-\[86vh\] {
+    @media (width >= 48rem) {
+      height: 86vh;
+    }
+  }
   .md\:h-\[400px\] {
     @media (width >= 48rem) {
       height: 400px;

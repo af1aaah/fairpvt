@@ -768,8 +768,14 @@
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-\[25px\] {
+    width: 25px;
+  }
   .w-\[40\%\] {
     width: 40%;
+  }
+  .w-\[40px\] {
+    width: 40px;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -788,6 +794,9 @@
   }
   .w-dvw {
     width: 100dvw;
+  }
+  .w-fit {
+    width: fit-content;
   }
   .w-full {
     width: 100%;

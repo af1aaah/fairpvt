@@ -1,886 +1,1281 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fair Diffuser – Premium Aroma Diffuser for Home & Business | Fairpvt UAE</title>
-    <meta name="description"
-        content="Experience the Fair Diffuser by Fairpvt – UAE’s first advanced aroma diffuser for home and commercial use. Enjoy long-lasting fragrance and improved indoor air with our premium air freshener solutions across UAE, Saudi Arabia, and Qatar." />
-    <meta name="keywords"
-        content="Fairpvt, Fair Diffuser, aroma diffuser, air diffuser UAE, premium air freshener, air diffuser Dubai, home diffuser, commercial diffuser, scenting, aroma oils, Saudi Arabia, Qatar" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Fair Diffuser – Premium Aroma Diffuser for Home & Business | Fairpvt UAE
+    </title>
+    <meta
+      name="description"
+      content="Experience the Fair Diffuser by Fairpvt – UAE’s first advanced aroma diffuser for home and commercial use. Enjoy long-lasting fragrance and improved indoor air with our premium air freshener solutions across UAE, Saudi Arabia, and Qatar."
+    />
+    <meta
+      name="keywords"
+      content="Fairpvt, Fair Diffuser, aroma diffuser, air diffuser UAE, premium air freshener, air diffuser Dubai, home diffuser, commercial diffuser, scenting, aroma oils, Saudi Arabia, Qatar"
+    />
     <link rel="canonical" href="https://fairpvt.com/diffusers.html" />
     <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="./assets/css/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="./assets/css/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body class="font-poppins">
+  <body class="font-poppins">
     <!-- Navbar and Sidebar -->
     <nav
-        class="flex justify-between items-center fixed w-full md:px-[100px] px-4 text-white z-20 transition-all duration-300">
-        <div class="logo">
-            <img src="./assets/imgs/logo.png" alt="logo" class="w-20">
+      class="flex justify-between items-center fixed w-full md:px-[100px] px-4 text-white z-20 transition-all duration-300"
+    >
+      <div class="logo">
+        <img src="./assets/imgs/logo.png" alt="logo" class="w-20" />
+      </div>
+      <ul class="gap-4 hidden md:flex">
+        <li><a href="/" class="">Home</a></li>
+        <li><a href="/liquidPlant.html" class="">Liquid Plant</a></li>
+        <li><a href="/diffusers.html" class="">Air Diffuser</a></li>
+        <li><a href="/#about" class="">About</a></li>
+      </ul>
+      <div class="flex items-center gap-2">
+        <a href="index.html#contact">
+          <button
+            class="relative bg-white rounded-full px-4 py-2 text-black font-medium cursor-pointer transition-all duration-300"
+          >
+            Contact
+          </button>
+        </a>
+        <div
+          id="menuToggle"
+          class="md:hidden flex flex-col gap-2 cursor-pointer w-8 h-8"
+        >
+          <img src="./assets/imgs/menu.svg" alt="" class="w-10 h-10" />
         </div>
-        <ul class="gap-4 hidden md:flex">
-            <li><a href="/" class="">Home</a></li>
-            <li><a href="/liquidPlant.html" class="">Liquid Plant</a></li>
-            <li><a href="/diffusers.html" class="">Air Diffuser</a></li>
-            <li><a href="/#about" class="">About</a></li>
-        </ul>
-        <div class="flex items-center gap-2">
-            <a href="index.html#contact">
-                <button
-                    class="relative bg-white rounded-full px-4 py-2 text-black font-medium cursor-pointer transition-all duration-300">
-                    Contact
-                </button>
-            </a>
-            <div id="menuToggle" class="md:hidden flex flex-col gap-2 cursor-pointer w-8 h-8">
-                <img src="./assets/imgs/menu.svg" alt="" class="w-10 h-10">
-            </div>
-        </div>
+      </div>
     </nav>
-    <div id="sidebar"
-        class="fixed top-0 left-0 w-full h-full bg-white flex flex-col gap-6 justify-center px-6 text-3xl font-medium opacity-0 transition-opacity invisible duration-300 z-30">
-        <div id="closeToggle" class="absolute top-6 right-4 flex flex-col gap-2 cursor-pointer">
-            <img src="./assets/imgs/close.svg" alt="" class="w-6 h-6">
-        </div>
-        <a href="/" class="hover:text-gray-300">Home</a>
-        <a href="/liquidPlant.html" class="hover:text-gray-300">Liquid Plant</a>
-        <a href="/diffusers.html" class="hover:text-gray-300">Air Diffuser</a>
-        <a href="/#about" class="hover:text-gray-300">About</a>
+    <div
+      id="sidebar"
+      class="fixed top-0 left-0 w-full h-full bg-white flex flex-col gap-6 justify-center px-6 text-3xl font-medium opacity-0 transition-opacity invisible duration-300 z-30"
+    >
+      <div
+        id="closeToggle"
+        class="absolute top-6 right-4 flex flex-col gap-2 cursor-pointer"
+      >
+        <img src="./assets/imgs/close.svg" alt="" class="w-6 h-6" />
+      </div>
+      <a href="/" class="hover:text-gray-300">Home</a>
+      <a href="/liquidPlant.html" class="hover:text-gray-300">Liquid Plant</a>
+      <a href="/diffusers.html" class="hover:text-gray-300">Air Diffuser</a>
+      <a href="/#about" class="hover:text-gray-300">About</a>
     </div>
     <!-- Hero Section -->
-    <div class="hero w-full h-screen bg-cover bg-center flex items-center justify-center relative"
-        style="background-image: url('./assets/imgs/diffuser_hero.jpg')">
-        <div class="flex justify-between px-4 md:px-[100px] w-full z-10">
-            <div class="content text-white">
-                <h1 class="text-6xl md:text-8xl font-bold">Smells Better,<br> Feel Better.</h1>
-                <p class="text-2xl md:text-4xl mt-4">Fair Diffusers</p>
-                <a href="#products">
-                    <button
-                        class="bg-white rounded-full px-5 py-3 md:px-8 md:py-4 text-black font-medium mt-2 md:mt-6 cursor-pointer">Explore</button>
-                </a>
-            </div>
-            <div class="hero_img items-center hidden md:flex">
-                <img src="./assets/imgs/diffuser_img.png" alt="" class="w-[600px]">
-            </div>
+    <div
+      class="hero w-full h-screen bg-cover bg-center flex items-center justify-center relative"
+      style="background-image: url('./assets/imgs/diffuser_hero.jpg')"
+    >
+      <div class="flex justify-between px-4 md:px-[100px] w-full z-10">
+        <div class="content text-white">
+          <h1 class="text-6xl md:text-8xl font-bold">
+            Smells Better,<br />
+            Feel Better.
+          </h1>
+          <p class="text-2xl md:text-4xl mt-4">Fair Diffusers</p>
+          <a
+            href="./assets/brochures/fair tank brochure.pdf"
+            download
+            class="bg-white w-fit rounded-full px-5 py-3 md:px-8 md:py-4 text-black font-medium mt-2 md:mt-6 cursor-pointer flex gap-2 align-center"
+          >
+            <img
+              class="w-[25px]"
+              src="./assets/imgs/liquid plant/cloud-arrow-down.svg"
+              alt=""
+            />
+            <span>Brochure</span></a
+          >
         </div>
-        <div class="overlay bg-black/50 w-full h-full absolute top-0"></div>
+        <div class="hero_img items-center hidden md:flex">
+          <img src="./assets/imgs/diffuser_img.png" alt="" class="w-[600px]" />
+        </div>
+      </div>
+      <div class="overlay bg-black/50 w-full h-full absolute top-0"></div>
     </div>
     <!-- Features Section -->
-    <div class="flex flex-col md:flex-row px-4 md:px-[100px] py-[100px] w-full justify-center gap-10 md:gap-24">
-        <div>
-            <div class="w-full h-[300px] md:w-[400px] md:h-[400px] bg-center bg-cover rounded-xl"
-                style="background-image: url('./assets/imgs/cactus_indoor.jpg')"></div>
-            <h3 class="uppercase text-2xl font-medium mt-4 max-w-md">Transform your space with Inviting Fragrance</h3>
-        </div>
-        <div>
-            <h2 class="font-semibold text-4xl md:text-5xl md:leading-20">Why Choose Our <br>Air Diffuser?</h2>
-            <ul>
-                <li class="text-2xl md:text-3xl font-medium mt-6"><span class="font-semibold">01</span> Long Lasting
-                    Freshness</li>
-                <li class="text-2xl md:text-3xl font-medium mt-6"><span class="font-semibold">02</span> Mood Boosting
-                    Aromas</li>
-                <li class="text-2xl md:text-3xl font-medium mt-6"><span class="font-semibold">03</span> Eco-Friendly &
-                    Safe</li>
-                <li class="text-2xl md:text-3xl font-medium mt-6"><span class="font-semibold">04</span> Customizable
-                    Scents</li>
-                <li class="text-2xl md:text-3xl font-medium mt-6"><span class="font-semibold">05</span> Smart &
-                    Efficient</li>
-            </ul>
-        </div>
+    <div
+      class="flex flex-col md:flex-row px-4 md:px-[100px] py-[100px] w-full justify-center gap-10 md:gap-24"
+    >
+      <div>
+        <div
+          class="w-full h-[300px] md:w-[400px] md:h-[400px] bg-center bg-cover rounded-xl"
+          style="background-image: url('./assets/imgs/cactus_indoor.jpg')"
+        ></div>
+        <h3 class="uppercase text-2xl font-medium mt-4 max-w-md">
+          Transform your space with Inviting Fragrance
+        </h3>
+      </div>
+      <div>
+        <h2 class="font-semibold text-4xl md:text-5xl md:leading-20">
+          Why Choose Our <br />Air Diffuser?
+        </h2>
+        <ul>
+          <li class="text-2xl md:text-3xl font-medium mt-6">
+            <span class="font-semibold">01</span> Long Lasting Freshness
+          </li>
+          <li class="text-2xl md:text-3xl font-medium mt-6">
+            <span class="font-semibold">02</span> Mood Boosting Aromas
+          </li>
+          <li class="text-2xl md:text-3xl font-medium mt-6">
+            <span class="font-semibold">03</span> Eco-Friendly & Safe
+          </li>
+          <li class="text-2xl md:text-3xl font-medium mt-6">
+            <span class="font-semibold">04</span> Customizable Scents
+          </li>
+          <li class="text-2xl md:text-3xl font-medium mt-6">
+            <span class="font-semibold">05</span> Smart & Efficient
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Product Placement Section -->
     <div class="mb-[100px]">
-        <div class="desk relative hidden md:block">
-            <img src="./assets/imgs/prd-placed-bg.png" alt="product_placed" class="w-dvw">
+      <div class="desk relative hidden md:block">
+        <img
+          src="./assets/imgs/prd-placed-bg.png"
+          alt="product_placed"
+          class="w-dvw"
+        />
 
-            <div class="absolute top-[30%] left-[33.5%] transform -translate-x-1/2 -translate-y-1/2 group">
-                <div class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                <div
-                    class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                    <a href="#fd300">
-                        <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
-                            <h3 class="font-semibold text-sm">FD-300</h3>
-                            <p class="text-xs">For Washrooms, Living Room, Etc</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="absolute top-[64%] left-[37.7%] transform -translate-x-1/2 -translate-y-1/2 group">
-                <div class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                <div
-                    class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                    <a href="#fd400">
-                        <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
-                            <h3 class="font-semibold text-sm">FD-400</h3>
-                            <p class="text-xs">For Hotels, Home, Health Care, Etc</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="absolute top-[74%] left-[27.5%] transform -translate-x-1/2 -translate-y-1/2 group">
-                <div class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                <div
-                    class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                    <a href="#fd900">
-                        <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
-                            <h3 class="font-semibold text-sm">FD-900</h3>
-                            <p class="text-xs">For Bigger Spaces like Malls, Cinemas, Etc.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="absolute top-[58%] left-[80.5%] transform -translate-x-1/2 -translate-y-1/2 group">
-                <div class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                <div
-                    class="absolute right-0 bottom-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                    <a href="#fd500">
-                        <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
-                            <h3 class="font-semibold text-sm">FD-3500</h3>
-                            <p class="text-xs">Standalone Tower for Bigger Spaces</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="absolute top-[47%] left-[93%] transform -translate-x-1/2 -translate-y-1/2 group">
-                <div class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                <div
-                    class="absolute right-0 bottom-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
-                    <a href="#fd200">
-                        <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
-                            <h3 class="font-semibold text-sm">FD-200</h3>
-                            <p class="text-xs">Plug In Diffuser for Living area, Bedroom, Etc.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
+        <div
+          class="absolute top-[30%] left-[33.5%] transform -translate-x-1/2 -translate-y-1/2 group"
+        >
+          <div
+            class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+          ></div>
+          <div
+            class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+          >
+            <a href="#fd300">
+              <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
+                <h3 class="font-semibold text-sm">FD-300</h3>
+                <p class="text-xs">For Washrooms, Living Room, Etc</p>
+              </div>
+            </a>
+          </div>
         </div>
-        <div class="mobile md:hidden block">
-            <div class="relative border-y-2">
-                <img src="./assets/imgs/prd-placed-bg-1.png" alt="product_placed-1" class="w-dvw">
-
-
-                <div class="absolute top-[30%] left-[66.5%] transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                    <div class="tooltip absolute right-0 top-0 opacity-0 invisible transition">
-                        <a href="#fd300">
-                            <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
-                                <h3 class="font-semibold text-sm">FD-300</h3>
-                                <p class="text-xs">For Washrooms, Living Room, Etc</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="absolute top-[64%] left-[75%] transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer z-10"></div>
-                    <div class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition z-20">
-                        <a href="#fd400">
-                            <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
-                                <h3 class="font-semibold text-sm">FD-400</h3>
-                                <p class="text-xs">For Hotels, Home, Health Care, Etc</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="absolute top-[74%] left-[55%] transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer z-10"></div>
-                    <div class="tooltip absolute right-0 top-0 opacity-0 invisible transition">
-                        <a href="#fd900">
-                            <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
-                                <h3 class="font-semibold text-sm">FD-900</h3>
-                                <p class="text-xs">For Bigger Spaces like Malls, Cinemas, Etc.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="relative border-y-2">
-                <img src="./assets/imgs/prd-placed-bg-2.png" alt="product_placed-2" class="w-dvw">
-
-                <div class="absolute top-[58%] left-[61%] transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                    <div class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition">
-                        <a href="#fd3500">
-                            <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
-                                <h3 class="font-semibold text-sm">FD-3500</h3>
-                                <p class="text-xs">Standalone Tower for Bigger Spaces</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="absolute top-[47%] left-[86%] transform -translate-x-1/2 -translate-y-1/2">
-                    <div class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"></div>
-                    <div class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition">
-                        <a href="#fd200">
-                            <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
-                                <h3 class="font-semibold text-sm">FD-200</h3>
-                                <p class="text-xs">Plug In Diffuser for Living area, Bedroom, Etc.</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div
+          class="absolute top-[64%] left-[37.7%] transform -translate-x-1/2 -translate-y-1/2 group"
+        >
+          <div
+            class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+          ></div>
+          <div
+            class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+          >
+            <a href="#fd400">
+              <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
+                <h3 class="font-semibold text-sm">FD-400</h3>
+                <p class="text-xs">For Hotels, Home, Health Care, Etc</p>
+              </div>
+            </a>
+          </div>
         </div>
+        <div
+          class="absolute top-[74%] left-[27.5%] transform -translate-x-1/2 -translate-y-1/2 group"
+        >
+          <div
+            class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+          ></div>
+          <div
+            class="absolute left-0 top-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+          >
+            <a href="#fd900">
+              <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
+                <h3 class="font-semibold text-sm">FD-900</h3>
+                <p class="text-xs">
+                  For Bigger Spaces like Malls, Cinemas, Etc.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="absolute top-[58%] left-[80.5%] transform -translate-x-1/2 -translate-y-1/2 group"
+        >
+          <div
+            class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+          ></div>
+          <div
+            class="absolute right-0 bottom-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+          >
+            <a href="#fd500">
+              <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
+                <h3 class="font-semibold text-sm">FD-3500</h3>
+                <p class="text-xs">Standalone Tower for Bigger Spaces</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div
+          class="absolute top-[47%] left-[93%] transform -translate-x-1/2 -translate-y-1/2 group"
+        >
+          <div
+            class="w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+          ></div>
+          <div
+            class="absolute right-0 bottom-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition"
+          >
+            <a href="#fd200">
+              <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
+                <h3 class="font-semibold text-sm">FD-200</h3>
+                <p class="text-xs">
+                  Plug In Diffuser for Living area, Bedroom, Etc.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mobile md:hidden block">
+        <div class="relative border-y-2">
+          <img
+            src="./assets/imgs/prd-placed-bg-1.png"
+            alt="product_placed-1"
+            class="w-dvw"
+          />
+
+          <div
+            class="absolute top-[30%] left-[66.5%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+            ></div>
+            <div
+              class="tooltip absolute right-0 top-0 opacity-0 invisible transition"
+            >
+              <a href="#fd300">
+                <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
+                  <h3 class="font-semibold text-sm">FD-300</h3>
+                  <p class="text-xs">For Washrooms, Living Room, Etc</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-[64%] left-[75%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer z-10"
+            ></div>
+            <div
+              class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition z-20"
+            >
+              <a href="#fd400">
+                <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
+                  <h3 class="font-semibold text-sm">FD-400</h3>
+                  <p class="text-xs">For Hotels, Home, Health Care, Etc</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-[74%] left-[55%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer z-10"
+            ></div>
+            <div
+              class="tooltip absolute right-0 top-0 opacity-0 invisible transition"
+            >
+              <a href="#fd900">
+                <div class="bg-white p-3 mt-6 rounded shadow-lg w-40">
+                  <h3 class="font-semibold text-sm">FD-900</h3>
+                  <p class="text-xs">
+                    For Bigger Spaces like Malls, Cinemas, Etc.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative border-y-2">
+          <img
+            src="./assets/imgs/prd-placed-bg-2.png"
+            alt="product_placed-2"
+            class="w-dvw"
+          />
+
+          <div
+            class="absolute top-[58%] left-[61%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+            ></div>
+            <div
+              class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition"
+            >
+              <a href="#fd3500">
+                <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
+                  <h3 class="font-semibold text-sm">FD-3500</h3>
+                  <p class="text-xs">Standalone Tower for Bigger Spaces</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="absolute top-[47%] left-[86%] transform -translate-x-1/2 -translate-y-1/2"
+          >
+            <div
+              class="hotspot w-4 h-4 bg-[#131313] rounded-full animate-pulse cursor-pointer"
+            ></div>
+            <div
+              class="tooltip absolute right-0 bottom-0 opacity-0 invisible transition"
+            >
+              <a href="#fd200">
+                <div class="bg-white p-3 mb-6 rounded shadow-lg w-40">
+                  <h3 class="font-semibold text-sm">FD-200</h3>
+                  <p class="text-xs">
+                    Plug In Diffuser for Living area, Bedroom, Etc.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Diffusers Section  -->
-    <div class="products px-4 md:px-[100px] mb-[100px] flex flex-col items-center gap-16 md:gap-24" id="products">
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd100">
-            <img src="./assets/imgs/products/fd100-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-100</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">300M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">AC 100-240V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">2.5W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">100ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">1.7 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-100" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+    <div
+      class="products px-4 md:px-[100px] mb-[100px] flex flex-col items-center gap-16 md:gap-24"
+      id="products"
+    >
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd100"
+      >
+        <img
+          src="./assets/imgs/products/fd100-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-100</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">300M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">AC 100-240V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">2.5W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">100ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">1.7 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-100"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd200">
-            <img src="./assets/imgs/products/fd200-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-200</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">300M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">AC 100-240V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">2.5W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">100ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">1.7 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-200" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd200"
+      >
+        <img
+          src="./assets/imgs/products/fd200-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-200</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">300M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">AC 100-240V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">2.5W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">100ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">1.7 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-200"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd300">
-            <img src="./assets/imgs/products/fd300-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-300</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">200M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 4.2V/4.5V/5V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">1.5W/1.5W/1.9W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">150ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">0.5 ml/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-300" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd300"
+      >
+        <img
+          src="./assets/imgs/products/fd300-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-300</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">200M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 4.2V/4.5V/5V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">1.5W/1.5W/1.9W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">150ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">0.5 ml/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-300"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
+      </div>
 
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd400">
-            <img src="./assets/imgs/products/fd400-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-400</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">500M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 5V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">4W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">400ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">6.5 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-400" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd400"
+      >
+        <img
+          src="./assets/imgs/products/fd400-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-400</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">500M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 5V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">4W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">400ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">6.5 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-400"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd900">
-            <img src="./assets/imgs/products/fd900-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-900</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">2000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">12W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">1000ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">5 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-900" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd900"
+      >
+        <img
+          src="./assets/imgs/products/fd900-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-900</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">2000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">12W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">1000ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">5 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-900"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd1000">
-            <img src="./assets/imgs/products/fd1000-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-1000</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">4000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">15W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">1000ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">6 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-1000" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd1000"
+      >
+        <img
+          src="./assets/imgs/products/fd1000-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-1000</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">4000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">15W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">1000ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">6 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-1000"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd2000">
-            <img src="./assets/imgs/products/fd2000-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-2000</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">7000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">25W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">1000ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">8 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-2000" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd2000"
+      >
+        <img
+          src="./assets/imgs/products/fd2000-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-2000</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">7000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">25W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">1000ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">8 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-2000"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
+      </div>
 
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd3000">
-            <img src="./assets/imgs/products/fd3000-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-3000</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">1000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">8W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">500ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">0.5 ml/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3000" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd3000"
+      >
+        <img
+          src="./assets/imgs/products/fd3000-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-3000</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">1000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">8W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">500ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">0.5 ml/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3000"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd3500">
-            <img src="./assets/imgs/products/tower-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-3500</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">3000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">10W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">1000ml</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">3 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3500" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd3500"
+      >
+        <img
+          src="./assets/imgs/products/tower-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-3500</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">3000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">10W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">1000ml</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">3 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3500"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd5000">
-            <img src="./assets/imgs/products/fd5000-bg.png" alt="" class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-5000</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">5000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">DC 12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">10W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">1l</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">5 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-5000" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd5000"
+      >
+        <img
+          src="./assets/imgs/products/fd5000-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-5000</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">5000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">DC 12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">10W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">1l</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">5 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-5000"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd5000b">
-            <img src="./assets/imgs/products/fd5000b-bg.jpg" alt=""
-                class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-5000B</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">5000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">10W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">2.5l</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">5 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3500" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd5000b"
+      >
+        <img
+          src="./assets/imgs/products/fd5000b-bg.jpg"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-5000B</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">5000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">10W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">2.5l</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">5 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-3500"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
-        <div class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
-            id="fd10000">
-            <img src="./assets/imgs/products/fd10000-bg.png" alt=""
-                class="w-full md:w-[400px] md:h-[400px] rounded-3xl">
-            <div class="md:mt-4 w-full max-w-md">
-                <h2 class="text-2xl font-bold">FD-10000</h2>
-                <table class="w-full mt-2 border-t border-black text-lg">
-                    <tbody>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Coverage</td>
-                            <td class="text-right">10000M³</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Voltage</td>
-                            <td class="text-right">12V</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Power</td>
-                            <td class="text-right">10W</td>
-                        </tr>
-                        <tr class="border-b">
-                            <td class="py-2 font-semibold">Capacity</td>
-                            <td class="text-right">5l</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 font-semibold">Consumptions</td>
-                            <td class="text-right">6 g/hr</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-10000" target="_blank">
-                    <button class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer">Buy
-                        Now</button>
-                </a>
-            </div>
+      </div>
+      <div
+        class="flex flex-col md:flex-row-reverse gap-8 md:gap-10 items-center md:items-start justify-center w-full"
+        id="fd10000"
+      >
+        <img
+          src="./assets/imgs/products/fd10000-bg.png"
+          alt=""
+          class="w-full md:w-[400px] md:h-[400px] rounded-3xl"
+        />
+        <div class="md:mt-4 w-full max-w-md">
+          <h2 class="text-2xl font-bold">FD-10000</h2>
+          <table class="w-full mt-2 border-t border-black text-lg">
+            <tbody>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Coverage</td>
+                <td class="text-right">10000M³</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Voltage</td>
+                <td class="text-right">12V</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Power</td>
+                <td class="text-right">10W</td>
+              </tr>
+              <tr class="border-b">
+                <td class="py-2 font-semibold">Capacity</td>
+                <td class="text-right">5l</td>
+              </tr>
+              <tr>
+                <td class="py-2 font-semibold">Consumptions</td>
+                <td class="text-right">6 g/hr</td>
+              </tr>
+            </tbody>
+          </table>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+FD-10000"
+            target="_blank"
+          >
+            <button
+              class="bg-black rounded-full px-8 py-4 text-white font-medium mt-4 cursor-pointer"
+            >
+              Buy Now
+            </button>
+          </a>
         </div>
+      </div>
     </div>
     <!-- Scents Section  -->
     <div class="scents">
-        <h2 class="text-3xl md:text-5xl font-bold mx-4 md:mx-[100px]">Explore Scents</h2>
-        <div class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-bottom relative"
-            style="background-image: url('./assets/imgs/premium_bg.jpg')">
-            <div class="overlay absolute top-0 left-0 w-full h-full bg-black/30"></div>
-            <h3 class="text-white font-semibold text-4xl z-10">Premium</h3>
+      <h2 class="text-3xl md:text-5xl font-bold mx-4 md:mx-[100px]">
+        Explore Scents
+      </h2>
+      <div
+        class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-bottom relative"
+        style="background-image: url('./assets/imgs/premium_bg.jpg')"
+      >
+        <div
+          class="overlay absolute top-0 left-0 w-full h-full bg-black/30"
+        ></div>
+        <h3 class="text-white font-semibold text-4xl z-10">Premium</h3>
+      </div>
+      <div
+        class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]"
+      >
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/fakhr.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Fakhr Al-Oudh</h3>
+            <p class="text-base">The Essence of Pride</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhr+Al-Oudh"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]">
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/fakhr.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Fakhr Al-Oudh</h3>
-                    <p class="text-base">The Essence of Pride</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhr+Al-Oudh" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/farakh.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Farah Al-Oudh</h3>
-                    <p class="text-base">The Fragrance of Happiness</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Farah+Al-Oudh" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/fakhamah.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Fakhamah Oudh</h3>
-                    <p class="text-base">The Scent of Elegance</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhamah+Oudh" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/futoor.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Futoor Oudh</h3>
-                    <p class="text-base">A Dawn of Pure Aroma</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Futoor+Oudh" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/farakh.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Farah Al-Oudh</h3>
+            <p class="text-base">The Fragrance of Happiness</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Farah+Al-Oudh"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-center relative"
-            style="background-image: url('./assets/imgs/bakhoor_bg.jpg')">
-            <div class="overlay absolute top-0 left-0 w-full h-full bg-black/30"></div>
-            <h3 class="text-white font-semibold text-4xl z-10">Bakhoor</h3>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/fakhamah.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Fakhamah Oudh</h3>
+            <p class="text-base">The Scent of Elegance</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhamah+Oudh"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]">
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/fanan.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Fanan Al-Bakhoor</h3>
-                    <p class="text-base">Artistic Bakhoor</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fanan+Al-Bakhoor"
-                        target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/firdaus.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Firdaus Al-Oudh</h3>
-                    <p class="text-base">Heavenly Oudh</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Firdaus+Al-Oudh" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/arabia.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Fakhar Al-Arabia</h3>
-                    <p class="text-base">Pride of Arabia</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhar+Al-Arabia"
-                        target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/futoor.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Futoor Oudh</h3>
+            <p class="text-base">A Dawn of Pure Aroma</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Futoor+Oudh"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-bottom relative"
-            style="background-image: url('./assets/imgs/floral_bg.jpg')">
-            <div class="overlay absolute top-0 left-0 w-full h-full bg-black/30"></div>
-            <h3 class="text-white font-semibold text-4xl z-10">Floral</h3>
+      </div>
+      <div
+        class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-center relative"
+        style="background-image: url('./assets/imgs/bakhoor_bg.jpg')"
+      >
+        <div
+          class="overlay absolute top-0 left-0 w-full h-full bg-black/30"
+        ></div>
+        <h3 class="text-white font-semibold text-4xl z-10">Bakhoor</h3>
+      </div>
+      <div
+        class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]"
+      >
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/fanan.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Fanan Al-Bakhoor</h3>
+            <p class="text-base">Artistic Bakhoor</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fanan+Al-Bakhoor"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]">
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/zahrat.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Zahrat al-Teen</h3>
-                    <p class="text-base">Fig Blossom</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Zahrat+al-Teen" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
-            <div class="card col-span-1">
-                <img src="./assets/imgs/scents/ward.png" alt="" class="w-full h-[300px] object-cover rounded-xl">
-                <div class="p-4">
-                    <h3 class="font-semibold text-xl">Ward al-Jinniya</h3>
-                    <p class="text-base">Fairy Petals</p>
-                    <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Ward+al-Jinniya" target="_blank">
-                        <button class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer">Buy
-                            Now</button>
-                    </a>
-                </div>
-            </div>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/firdaus.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Firdaus Al-Oudh</h3>
+            <p class="text-base">Heavenly Oudh</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Firdaus+Al-Oudh"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
-        <div class="my-8 md:my-16 h-[350px] flex items-center justify-center bg-cover bg-center relative"
-            style="background-image: url('./assets/imgs/scent_collection.png')">
-            <div class="overlay absolute top-0 left-0 w-full h-full bg-black/30"></div>
-            <div class="z-10 flex flex-col items-center gap-4">
-                <h3 class="text-white font-semibold text-4xl">Discover 20+ extra scents.</h3>
-                <a href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Ward+al-Jinniya" target="_blank">
-                    <button
-                        class="bg-white rounded-full px-8 py-4 text-black font-medium mt-2 cursor-pointer">Explore</button>
-                </a>
-            </div>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/arabia.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Fakhar Al-Arabia</h3>
+            <p class="text-base">Pride of Arabia</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Fakhar+Al-Arabia"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
         </div>
+      </div>
+      <div
+        class="my-8 md:my-16 py-10 flex justify-center bg-cover bg-bottom relative"
+        style="background-image: url('./assets/imgs/floral_bg.jpg')"
+      >
+        <div
+          class="overlay absolute top-0 left-0 w-full h-full bg-black/30"
+        ></div>
+        <h3 class="text-white font-semibold text-4xl z-10">Floral</h3>
+      </div>
+      <div
+        class="listings grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-[100px]"
+      >
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/zahrat.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Zahrat al-Teen</h3>
+            <p class="text-base">Fig Blossom</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Zahrat+al-Teen"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card col-span-1">
+          <img
+            src="./assets/imgs/scents/ward.png"
+            alt=""
+            class="w-full h-[300px] object-cover rounded-xl"
+          />
+          <div class="p-4">
+            <h3 class="font-semibold text-xl">Ward al-Jinniya</h3>
+            <p class="text-base">Fairy Petals</p>
+            <a
+              href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Ward+al-Jinniya"
+              target="_blank"
+            >
+              <button
+                class="bg-black rounded-full px-8 py-2 text-white font-medium mt-2 cursor-pointer"
+              >
+                Buy Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="my-8 md:my-16 h-[350px] flex items-center justify-center bg-cover bg-center relative"
+        style="background-image: url('./assets/imgs/scent_collection.png')"
+      >
+        <div
+          class="overlay absolute top-0 left-0 w-full h-full bg-black/30"
+        ></div>
+        <div class="z-10 flex flex-col items-center gap-4">
+          <h3 class="text-white font-semibold text-4xl">
+            Discover 20+ extra scents.
+          </h3>
+          <a
+            href="https://wa.me/971504822023?text=Hi%2C+I%27m+interested+in+Ward+al-Jinniya"
+            target="_blank"
+          >
+            <button
+              class="bg-white rounded-full px-8 py-4 text-black font-medium mt-2 cursor-pointer"
+            >
+              Explore
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
     <!-- Footer  -->
     <footer
-        class="flex px-4 md:px-[100px] py-10 w-full justify-between items-start md:items-end md:flex-row flex-col gap-4">
-        <div>
-            <img src="./assets/imgs/logo.png" alt="logo" class="w-36">
-            <p class="text-lg font-medium">&#169;All rights reserved by Fairpvt.</p>
+      class="flex px-4 md:px-[100px] py-10 w-full justify-between items-start md:items-end md:flex-row flex-col gap-4"
+    >
+      <div>
+        <img src="./assets/imgs/logo.png" alt="logo" class="w-36" />
+        <p class="text-lg font-medium">&#169;All rights reserved by Fairpvt.</p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="flex gap-2">
+          <a href=""
+            ><img
+              src="./assets/imgs/instagram.svg"
+              alt="instagram"
+              class="w-8 h-8"
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/imgs/linkedin.svg"
+              alt="linkedin"
+              class="w-8 h-8"
+          /></a>
         </div>
-        <div class="flex flex-col gap-2">
-            <div class="flex gap-2">
-                <a href=""><img src="./assets/imgs/instagram.svg" alt="instagram" class="w-8 h-8"></a>
-                <a href=""><img src="./assets/imgs/linkedin.svg" alt="linkedin" class="w-8 h-8"></a>
-            </div>
-            <a href="" class="flex items-center gap-2"><img src="./assets/imgs/email.svg" alt="email" class="w-8 h-8">
-                info@fairpvt.com</a>
-            <a href="" class="flex items-center gap-2"><img src="./assets/imgs/phone.svg" alt="phone" class="w-8 h-8">
-                +971 504822023</a>
-        </div>
+        <a href="" class="flex items-center gap-2"
+          ><img src="./assets/imgs/email.svg" alt="email" class="w-8 h-8" />
+          info@fairpvt.com</a
+        >
+        <a href="" class="flex items-center gap-2"
+          ><img src="./assets/imgs/phone.svg" alt="phone" class="w-8 h-8" />
+          +971 504822023</a
+        >
+      </div>
     </footer>
     <!-- Scripts -->
     <script>
-        const menuToggle = document.getElementById("menuToggle");
-        const sidebar = document.getElementById("sidebar");
+      const menuToggle = document.getElementById("menuToggle");
+      const sidebar = document.getElementById("sidebar");
 
-        function toggleMenu() {
-            sidebar.classList.toggle("opacity-100");
-            sidebar.classList.toggle("visible");
+      function toggleMenu() {
+        sidebar.classList.toggle("opacity-100");
+        sidebar.classList.toggle("visible");
+      }
+
+      menuToggle.addEventListener("click", toggleMenu);
+      closeToggle.addEventListener("click", toggleMenu);
+
+      const navbar = document.querySelector("nav");
+      const ctabtn = document.querySelector("nav button");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("bg-white", "text-black");
+          navbar.classList.remove("text-white");
+
+          ctabtn.classList.remove("bg-white", "text-black");
+          ctabtn.classList.add("bg-black", "text-white");
+        } else {
+          navbar.classList.add("text-white");
+          navbar.classList.remove("bg-white", "text-black");
+
+          ctabtn.classList.add("bg-white", "text-black");
+          ctabtn.classList.remove("bg-black", "text-white");
         }
-
-        menuToggle.addEventListener("click", toggleMenu);
-        closeToggle.addEventListener("click", toggleMenu);
-
-        const navbar = document.querySelector("nav");
-        const ctabtn = document.querySelector("nav button");
-
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add("bg-white", "text-black");
-                navbar.classList.remove("text-white");
-
-                ctabtn.classList.remove("bg-white", "text-black");
-                ctabtn.classList.add("bg-black", "text-white");
-            } else {
-                navbar.classList.add("text-white");
-                navbar.classList.remove("bg-white", "text-black");
-
-                ctabtn.classList.add("bg-white", "text-black");
-                ctabtn.classList.remove("bg-black", "text-white");
-            }
-        });
+      });
     </script>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const hotspots = document.querySelectorAll(".hotspot");
+      document.addEventListener("DOMContentLoaded", function () {
+        const hotspots = document.querySelectorAll(".hotspot");
 
-            hotspots.forEach(hotspot => {
-                const tooltip = hotspot.nextElementSibling;
+        hotspots.forEach((hotspot) => {
+          const tooltip = hotspot.nextElementSibling;
 
-                hotspot.addEventListener("click", (event) => {
-                    // Close all tooltips except the clicked one
-                    document.querySelectorAll(".tooltip").forEach(t => {
-                        if (t !== tooltip) {
-                            t.classList.add("opacity-0", "invisible");
-                        }
-                    });
-
-                    // Toggle visibility of the clicked tooltip
-                    tooltip.classList.toggle("opacity-0");
-                    tooltip.classList.toggle("invisible");
-
-                    // Prevent event bubbling
-                    event.stopPropagation();
-                });
+          hotspot.addEventListener("click", (event) => {
+            // Close all tooltips except the clicked one
+            document.querySelectorAll(".tooltip").forEach((t) => {
+              if (t !== tooltip) {
+                t.classList.add("opacity-0", "invisible");
+              }
             });
 
-            // Close tooltips when clicking outside
-            document.addEventListener("click", () => {
-                document.querySelectorAll(".tooltip").forEach(t => {
-                    t.classList.add("opacity-0", "invisible");
-                });
-            });
+            // Toggle visibility of the clicked tooltip
+            tooltip.classList.toggle("opacity-0");
+            tooltip.classList.toggle("invisible");
+
+            // Prevent event bubbling
+            event.stopPropagation();
+          });
         });
-    </script>
-</body>
 
+        // Close tooltips when clicking outside
+        document.addEventListener("click", () => {
+          document.querySelectorAll(".tooltip").forEach((t) => {
+            t.classList.add("opacity-0", "invisible");
+          });
+        });
+      });
+    </script>
+  </body>
 </html>

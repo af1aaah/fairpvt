@@ -627,15 +627,6 @@
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
-  .m-7 {
-    margin: calc(var(--spacing) * 7);
-  }
-  .m-8 {
-    margin: calc(var(--spacing) * 8);
-  }
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
@@ -714,17 +705,23 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-\[00px\] {
+    height: 00px;
+  }
   .h-\[55\%\] {
     height: 55%;
-  }
-  .h-\[200px\] {
-    height: 200px;
   }
   .h-\[300px\] {
     height: 300px;
   }
   .h-\[350px\] {
     height: 350px;
+  }
+  .h-\[400px\] {
+    height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
   }
   .h-full {
     height: 100%;
@@ -753,9 +750,6 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
-  .w-9 {
-    width: calc(var(--spacing) * 9);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -773,9 +767,6 @@
   }
   .w-\[40\%\] {
     width: 40%;
-  }
-  .w-\[40px\] {
-    width: 40px;
   }
   .w-\[50\%\] {
     width: 50%;
@@ -868,9 +859,6 @@
   }
   .flex-row {
     flex-direction: row;
-  }
-  .flex-row-reverse {
-    flex-direction: row-reverse;
   }
   .items-center {
     align-items: center;
@@ -1014,6 +1002,9 @@
   .bg-top {
     background-position: top;
   }
+  .object-contain {
+    object-fit: contain;
+  }
   .object-cover {
     object-fit: cover;
   }
@@ -1025,12 +1016,6 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
-  }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
